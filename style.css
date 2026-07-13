@@ -1,18 +1,27 @@
-body {
-    background-color: blue; /* Fundo azul */
-    color: white;
+form {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centralizado */
-    justify-content: center;
-    min-height: 100vh;
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
 }
 
-table, form {
-    border: 2px solid white; /* Bordas brancas */
-    padding: 20px;
-    margin: 20px;
-    background-color: rgba(0, 0, 0, 0.2); /* Fundo leve para destaque */
+input, textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid cyan; /* Borda da cor do exemplo */
+    border-radius: 4px;
 }
 
-input { padding: 10px; }
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: cyan;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
