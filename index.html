@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <title>Preencher formulários</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<form id="meuFormulario">
+    <h2>Entre Contato com a Webgenium</h2>
+    <p>Preencha o formulário abaixo para falar com nossa equipe de atendimento.</p>
 
-    <h1>Preencher formulários</h1>
+    <label>* Nome</label>
+    <input type="text" id="nome" placeholder="Digite seu nome" required>
 
-    <!-- Tabela -->
-    <table border="1">
-        <tr><th>Item</th><th>Descrição</th></tr>
-        <tr><td>Dados</td><td>Exemplo</td></tr>
-    </table>
+    <label>* E-mail</label>
+    <input type="email" id="email" placeholder="Digite seu e-mail" required>
 
-    <!-- Formulário -->
-    <form id="meuFormulario">
-        <input type="text" id="nome" placeholder="Seu nome" required>
-        <button type="submit">Enviar</button>
-    </form>
-    
-    <p id="mensagem"></p>
+    <label>Telefone</label>
+    <input type="tel" id="telefone" placeholder="(DDD) 99999-9999">
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <label>* Mensagem</label>
+    <textarea id="mensagem" placeholder="Sua mensagem aqui..." required></textarea>
+
+    <button type="submit">ENVIAR</button>
+</form>
