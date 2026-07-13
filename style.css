@@ -1,20 +1,42 @@
+body {
+    background-color: blue;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+#tabela-conteudo, #meuFormulario {
+    border: 2px solid white;
+    padding: 20px;
+    margin: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 10px;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 400px; /* Limita a largura do formulário */
 }
 
 input, textarea {
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid cyan; /* Borda da cor do exemplo */
+    border: 1px solid cyan;
     border-radius: 4px;
-}
-
-textarea {
-    height: 100px;
-    resize: vertical;
+    background: white;
+    color: black;
 }
 
 button {
@@ -24,4 +46,5 @@ button {
     border: none;
     cursor: pointer;
     font-weight: bold;
+    margin-top: 10px;
 }
