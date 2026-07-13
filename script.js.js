@@ -1,27 +1,17 @@
-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px; /* Limita a largura do formulário */
-}
+document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o recarregamento da página
 
-input, textarea {
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid cyan; /* Borda da cor do exemplo */
-    border-radius: 4px;
-}
+    // Capturando os novos campos
+    const nome = document.getElementById('nome').value;
+    const email = document.getElementById('email').value;
+    const telefone = document.getElementById('telefone').value;
+    const mensagemTexto = document.getElementById('mensagem').value;
 
-textarea {
-    height: 100px;
-    resize: vertical;
-}
-
-button {
-    background-color: cyan;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
+    // Exemplo de validação simples
+    if (nome.trim() === "" || email.trim() === "") {
+        alert("Por favor, preencha os campos obrigatórios (Nome e E-mail)!");
+    } else {
+        console.log("Dados enviados:", { nome, email, telefone, mensagemTexto });
+        alert("Enviado com sucesso, " + nome + "!");
+    }
+});
